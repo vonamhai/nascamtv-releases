@@ -4,8 +4,8 @@
 
 - Camera của Synology Surveillance Station: đăng nhập bằng QuickConnect ID hoặc địa chỉ IP của NAS
 - Camera RTSP/ONVIF kết nối thẳng, không cần NAS; quét mạng để tìm camera
-- Overlay camera ở góc màn hình trong lúc đang xem app khác, mở bằng giọng nói hoặc phím tắt trên remote;
-  bố cục 2–4 camera cùng lúc trong một overlay
+- Overlay camera ở góc màn hình trong lúc đang xem app khác, mở bằng giọng nói hoặc phím tắt trên remote
+  (gán nút bằng app miễn phí tvQuickActions); bố cục 2–4 camera cùng lúc trong một overlay
 - Giao diện 11 ngôn ngữ, theo ngôn ngữ của TV (ngôn ngữ chưa có thì dùng tiếng Anh)
 
 Repo này chỉ chứa tệp APK để cài đặt và cập nhật, không chứa mã nguồn.
@@ -37,6 +37,7 @@ Chuyển sang bằng tay, một lần:
 
 1. Cài TV Camera Overlay như mục **Cài lần đầu**. Hai app chạy song song, dữ liệu không tự chuyển sang.
 2. Trong TV Camera Overlay: đăng nhập NAS, thêm lại camera RTSP/ONVIF, cấp quyền overlay và micro.
-3. Gán lại phím tắt trên remote (Button Mapper…) vì phím tắt cũ vẫn mở app cũ. Lệnh tự động hoá có
+3. Gán lại phím tắt trên remote vì phím tắt cũ vẫn mở app cũ: app hướng dẫn dùng tvQuickActions
+   (Overlay › Gán nút remote), Button Mapper hay app gán nút khác cũng được. Lệnh tự động hoá có
    `-p com.nascam.tv` đổi thành `-p com.tvcameraoverlay`; link `nascam://…` vẫn dùng được.
 4. Gỡ NAS Cam TV.
